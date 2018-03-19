@@ -14,8 +14,6 @@ $(document).ready(function () {
     var wins = 0;
     var losses = 0;
 
-    $("#numberWins").text(wins);
-    $("#numberLosses").text(losses);
 
     function reset() {
         Random = Math.floor(Math.random() * 101 + 19);
@@ -28,17 +26,20 @@ $(document).ready(function () {
         $("#finalTotal").text(userTotal);
     }
 
+    $("#numberWins").text(wins);
+    $("#numberLosses").text(losses);
+
     function winner() {
         alert("You won!");
         wins++;
-        $('#numberWins').text(wins);
+        $("#numberWins").text(wins);
         reset();
     }
 
     function loser() {
         alert("You lose!");
         losses++;
-        $('#numberLosses').text(losses);
+        $("#numberLosses").text(losses);
         reset()
     }
 
@@ -56,13 +57,14 @@ $(document).ready(function () {
     $(".crystal-image").click(function () {
         userTotal = userTotal + crystalTwo;
         $('#finalTotal').text(userTotal);
-    })
+    
     if (userTotal == Random) {
         winner();
     }
     else if (userTotal > Random) {
         loser();
-    }
+    }});
+    
     $(".crystal-image").click(function () {
         userTotal = userTotal + crystalThree;
         $('#finalTotal').text(userTotal);
