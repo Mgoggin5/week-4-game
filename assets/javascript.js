@@ -46,13 +46,13 @@ $(document).ready(function () {
     $("#crystalOne").click(function () {
         userTotal = userTotal + crystalOne;
         $('#finalTotal').text(userTotal);
-    })
+    
     if (userTotal == Random) {
         winner();
     }
     else if (userTotal > Random) {
         loser();
-    }
+    }});
 
     $("#crystalTwo").click(function () {
         userTotal = userTotal + crystalTwo;
@@ -68,23 +68,23 @@ $(document).ready(function () {
     $("#crystalThree").click(function () {
         userTotal = userTotal + crystalThree;
         $('#finalTotal').text(userTotal);
-    })
+    
     if (userTotal == Random) {
         winner();
     }
     else if (userTotal > Random) {
         loser();
-    }
+    }});
     $("#crystalFour").click(function () {
         userTotal = userTotal + crystalFour;
         $('#finalTotal').text(userTotal);
-    })
+    
     if (userTotal == Random) {
         winner();
     }
     else if (userTotal > Random) {
         loser();
-    }
+    }});
 
 
 });
