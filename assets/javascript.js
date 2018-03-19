@@ -43,7 +43,7 @@ $(document).ready(function () {
         reset()
     }
 
-    $(".crystal-image").click(function () {
+    $("#crystalOne").click(function () {
         userTotal = userTotal + crystalOne;
         $('#finalTotal').text(userTotal);
     })
@@ -54,7 +54,7 @@ $(document).ready(function () {
         loser();
     }
 
-    $(".crystal-image").click(function () {
+    $("#crystalTwo").click(function () {
         userTotal = userTotal + crystalTwo;
         $('#finalTotal').text(userTotal);
     
@@ -65,7 +65,7 @@ $(document).ready(function () {
         loser();
     }});
     
-    $(".crystal-image").click(function () {
+    $("#crystalThree").click(function () {
         userTotal = userTotal + crystalThree;
         $('#finalTotal').text(userTotal);
     })
@@ -75,7 +75,7 @@ $(document).ready(function () {
     else if (userTotal > Random) {
         loser();
     }
-    $(".crystal-image").click(function () {
+    $("#crystalFour").click(function () {
         userTotal = userTotal + crystalFour;
         $('#finalTotal').text(userTotal);
     })
