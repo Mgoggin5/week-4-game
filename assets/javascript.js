@@ -47,7 +47,7 @@ $(document).ready(function () {
         userTotal = userTotal + crystalOne;
         $('#finalTotal').text(userTotal);
     
-    if (userTotal == Random) {
+    if (userTotal === Random) {
         winner();
     }
     else if (userTotal > Random) {
@@ -58,7 +58,7 @@ $(document).ready(function () {
         userTotal = userTotal + crystalTwo;
         $('#finalTotal').text(userTotal);
     
-    if (userTotal == Random) {
+    if (userTotal === Random) {
         winner();
     }
     else if (userTotal > Random) {
@@ -69,7 +69,7 @@ $(document).ready(function () {
         userTotal = userTotal + crystalThree;
         $('#finalTotal').text(userTotal);
     
-    if (userTotal == Random) {
+    if (userTotal === Random) {
         winner();
     }
     else if (userTotal > Random) {
@@ -79,7 +79,7 @@ $(document).ready(function () {
         userTotal = userTotal + crystalFour;
         $('#finalTotal').text(userTotal);
     
-    if (userTotal == Random) {
+    if (userTotal === Random) {
         winner();
     }
     else if (userTotal > Random) {
